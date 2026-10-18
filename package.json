@@ -1,0 +1,30 @@
+{
+  "name": "polymarket-copy-trading-bot",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript Polymarket copy-trading bot with test and live modes.",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "test": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@polymarket/clob-client-v2": "^1.0.8",
+    "dotenv": "^17.2.3",
+    "inquirer": "^14.0.2",
+    "validator": "^13.15.35",
+    "viem": "^2.46.3"
+  },
+  "overrides": {
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.20.6",
+    "typescript": "^6.0.2"
+  }
+}
